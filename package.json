@@ -1,0 +1,84 @@
+{
+  "name": "timegrify",
+  "description": "Work with the time as if you were human",
+  "version": "0.0.1",
+  "author": "Christofer Flores <cristofer.flort@gmail.com> ()",
+  "bugs": {
+    "url": "https://github.com/CrystalStream/timegrify/issues",
+    "email": "cristofer.flort@gmail.com"
+  },
+  "contributors": [
+    "Christofer Flores <cristofer.flort@gmail.com> ()"
+  ],
+  "dependencies": {},
+  "ava": {
+    "failFast": true,
+    "verbose": true
+  },
+  "devDependencies": {
+    "auto-bind": "^1.1.0",
+    "ava": "^0.22.0",
+    "codecov": "^2.3.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.5.0",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-standard": "latest",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.4",
+    "nyc": "^11.1.0",
+    "prettier": "^1.6.1",
+    "remark-cli": "^4.0.0",
+    "remark-preset-github": "^0.0.6",
+    "standard": "latest"
+  },
+  "engines": {
+    "node": ">=8.3"
+  },
+  "homepage": "https://github.com/CrystalStream/timegrify",
+  "keywords": [
+    "time",
+    "manipulation",
+    "node",
+    "cli"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,jsx,mjs,ts,tsx,css,less,scss,json,graphql}": [
+      "prettier --write --single-quote --trailing-comma none",
+      "git add"
+    ],
+    "*.md": [
+      "remark . -qfo",
+      "git add"
+    ]
+  },
+  "main": "index.js",
+  "nyc": {
+    "check-coverage": true,
+    "lines": 100,
+    "functions": 100,
+    "branches": 100,
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-github"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrystalStream/timegrify"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "standard && remark . -qfo",
+    "lint.fix": "standard --fix",
+    "not-used-precommit": "lint-staged && npm test",
+    "test": "npm run lint && npm run test-coverage",
+    "test-coverage": "cross-env NODE_ENV=test nyc ava"
+  }
+}
