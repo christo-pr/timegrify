@@ -1,16 +1,23 @@
-const autoBind = require('auto-bind')
+'use strict'
 
-class Script {
-  constructor (config) {
-    config = Object.assign({}, config)
-    this._name = config.name || 'script'
+const autoBind = require('auto-bind')
+const toMilis = require('./src/to-milis')
+const parseTime = require('./src/parse-time')
+
+class Timegrify {
+
+  constructor (time) {
+    this._time = time
 
     autoBind(this)
   }
 
-  renderName () {
-    return this._name
+  toMilis () {
+    const parsedTime = parseTime(this._time)
+    return toMilis(parsedTime)
   }
 }
 
-module.exports = Script
+module.exports = function (time) {
+  return new Timegrify(time)
+}

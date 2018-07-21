@@ -10,7 +10,10 @@
   "contributors": [
     "Christofer Flores <cristofer.flort@gmail.com> ()"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "proxyquire": "^2.0.1",
+    "sinon": "^6.1.3"
+  },
   "ava": {
     "failFast": true,
     "verbose": true
@@ -78,7 +81,7 @@
     "lint": "standard && remark . -qfo",
     "lint.fix": "standard --fix",
     "not-used-precommit": "lint-staged && npm test",
-    "test": "npm run lint && npm run test-coverage",
+    "test": "ava",
     "test-coverage": "cross-env NODE_ENV=test nyc ava"
   }
 }
