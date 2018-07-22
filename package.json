@@ -1,7 +1,7 @@
 {
   "name": "timegrify",
   "description": "Work with the time as if you were human",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Christofer Flores <cristofer.flort@gmail.com> ()",
   "bugs": {
     "url": "https://github.com/CrystalStream/timegrify/issues",
