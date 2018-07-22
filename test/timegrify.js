@@ -39,7 +39,7 @@ test.serial('[Timegrify]: call toMilis() function correctly', t => {
   const result = timegrify.toMilis()
   t.true(utilsStub.toMilis.called, 'toMilis function should be called')
   t.true(utilsStub.parseTime.called, 'parseTime function should be called')
-  t.true(utilsStub.parseTime.calledWith(parserFixtures.value), 'parseTime function should be called')
+  t.true(utilsStub.parseTime.calledWith(parserFixtures.value), 'parseTime function should be called with the correct arguments')
   t.true(utilsStub.toMilis.calledWith(timeFixtures.toMilis.value), 'toMilis function should be called with the same arguments as class constructor')
   t.is(result, timeFixtures.toMilis.return, 'result value correct')
 })

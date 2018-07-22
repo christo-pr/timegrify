@@ -4,10 +4,11 @@ function parseTime(time) {
   return time
 }
 
-const value = '1 year';
+const value = {
+  year: 2
+}
 
 module.exports = {
   parseTime,
   value
-};
-
+}

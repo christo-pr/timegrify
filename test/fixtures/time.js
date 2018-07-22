@@ -1,8 +1,8 @@
 'use strict'
 
 const timings = [
-  { fn: 'toMilis', value: '1 year', return: 31536000000 },
-  { fn: 'toSec', value: '1 year', return: 31536000 }
+  { fn: 'toMilis', value: {year: 2}, return: 63072000000 },
+  { fn: 'toSec', value: {year: 1}, return: 31536000 }
 ]
 
 module.exports = {
