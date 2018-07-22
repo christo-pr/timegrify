@@ -82,6 +82,6 @@
     "lint.fix": "standard --fix",
     "not-used-precommit": "lint-staged && npm test",
     "test": "ava",
-    "test-coverage": "cross-env NODE_ENV=test nyc ava"
+    "test.coverage": "cross-env NODE_ENV=test nyc ava"
   }
 }

@@ -1,16 +1,11 @@
 # timegrify
 
-[![build status](https://img.shields.io/travis/CrystalStream/timegrify.svg)](https://travis-ci.org/CrystalStream/timegrify)
-[![code coverage](https://img.shields.io/codecov/c/github/CrystalStream/timegrify.svg)](https://codecov.io/gh/CrystalStream/timegrify)
-[![code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![build status](https://img.shields.io/travis/CrystalStream/timegrify.svg)](https://travis-ci.org/CrystalStream/timegrify.svg?branch=master)
+[![styled with standard](https://img.shields.io/badge/styled_with-standard-ff69b4.svg)](https://github.com/standard/standard)
 [![made with lass](https://img.shields.io/badge/made_with-lass-95CC28.svg)](https://lass.js.org)
 [![license](https://img.shields.io/github/license/CrystalStream/timegrify.svg)](LICENSE)
 
 > Work with the time as if you were human
-
-
-## Table of Contents
 
 * [Install](#install)
 * [Usage](#usage)
@@ -20,29 +15,31 @@
 
 ## Install
 
-[npm][]:
-
-```sh
+```shell
 npm install timegrify
 ```
-
-[yarn][]:
-
-```sh
-yarn add timegrify
-```
-
 
 ## Usage
 
 ```js
-const Timegrify = require('timegrify');
+const timegrify = require('timegrify');
 
-const timegrify = new Timegrify();
-
-console.log(timegrify.renderName());
-// script
+timegrify('2 years').toMilis() // => 63072000000
 ```
+
+## Supported values
+
+| **YEAR** | **DAY** | **HOURS** |
+| -------- | ------- | --------  |
+| `year`   | `day`   | `hour`    |
+| `years`  | `days`  | `hours`   |
+
+## Methods
+> For now only has one method. Future versions will support more methods
+
+| Method | Description |
+| ------ | ----------- |
+| `.toMilis()` | Return the value transformed to milliseconds |
 
 
 ## Contributors
@@ -56,9 +53,3 @@ console.log(timegrify.renderName());
 
 [MIT](LICENSE) © Christofer Flores
 
-
-## 
-
-[npm]: https://www.npmjs.com/
-
-[yarn]: https://yarnpkg.com/
