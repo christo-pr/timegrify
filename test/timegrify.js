@@ -43,4 +43,3 @@ test.serial('[Timegrify]: call toMilis() function correctly', t => {
   t.true(utilsStub.toMilis.calledWith(timeFixtures.toMilis.value), 'toMilis function should be called with the same arguments as class constructor')
   t.is(result, timeFixtures.toMilis.return, 'result value correct')
 })
-

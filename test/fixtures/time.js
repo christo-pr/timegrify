@@ -6,6 +6,6 @@ const timings = [
 ]
 
 module.exports = {
-  toMilis: timings.find( t => t.fn === 'toMilis' ),
-  toSec: timings.find( t => t.fn === 'toSec' )
+  toMilis: timings.find(t => t.fn === 'toMilis'),
+  toSec: timings.find(t => t.fn === 'toSec')
 }

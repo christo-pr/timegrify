@@ -5,7 +5,6 @@ const toMilis = require('./src/to-milis')
 const parseTime = require('./src/parse-time')
 
 class Timegrify {
-
   constructor (time) {
     this._time = time
 

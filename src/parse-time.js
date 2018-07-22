@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = function parseTime(time) {
+module.exports = function parseTime (time) {
   // '1 year'
   const timePieces = time.split(' ') // ['1', 'year']
 
@@ -32,7 +32,4 @@ module.exports = function parseTime(time) {
         multiplier: 'hour'
       }
   }
-
-
-
 }

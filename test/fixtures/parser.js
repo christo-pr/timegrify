@@ -1,6 +1,6 @@
 'use strict'
 
-function parseTime(time) {
+function parseTime (time) {
   return time
 }
 
