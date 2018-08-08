@@ -1,14 +1,26 @@
 'use strict'
 
-function parseTime (time) {
-  return time
+const milisValue = '2 years'
+const secValue = '1 year'
+
+const parseMilisValue = {
+  value: 2,
+  multiplier: 'years'
 }
 
-const value = {
-  year: 2
+const parseSecValue = {
+  value: 1,
+  multiplier: 'year'
+}
+
+function parseTime (time) {
+  return time === milisValue ? parseMilisValue : parseSecValue
 }
 
 module.exports = {
   parseTime,
-  value
+  milisValue,
+  secValue,
+  parseMilisValue,
+  parseSecValue
 }

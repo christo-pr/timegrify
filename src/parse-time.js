@@ -1,8 +1,7 @@
 'use strict'
 
 module.exports = function parseTime (time) {
-  // '1 year'
-  const timePieces = time.split(' ') // ['1', 'year']
+  const timePieces = time.split(' ')
 
   switch (timePieces[1]) {
     case 'year':

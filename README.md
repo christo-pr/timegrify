@@ -40,6 +40,7 @@ timegrify('2 years').toMilis() // => 63072000000
 | Method | Description |
 | ------ | ----------- |
 | `.toMilis()` | Return the value transformed to milliseconds |
+| `.toSec()` | Return the value transformed to seconds |
 
 
 ## Contributors
