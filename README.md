@@ -19,6 +19,7 @@
 npm install timegrify
 ```
 
+
 ## Usage
 
 ```js
@@ -27,20 +28,23 @@ const timegrify = require('timegrify');
 timegrify('2 years').toMilis() // => 63072000000
 ```
 
+
 ## Supported values
 
 | **YEAR** | **DAY** | **HOURS** |
-| -------- | ------- | --------  |
+| -------- | ------- | --------- |
 | `year`   | `day`   | `hour`    |
 | `years`  | `days`  | `hours`   |
 
+
 ## Methods
+
 > For now only has one method. Future versions will support more methods
 
-| Method | Description |
-| ------ | ----------- |
+| Method       | Description                                  |
+| ------------ | -------------------------------------------- |
 | `.toMilis()` | Return the value transformed to milliseconds |
-| `.toSec()` | Return the value transformed to seconds |
+| `.toSec()`   | Return the value transformed to seconds      |
 
 
 ## Contributors
@@ -53,4 +57,3 @@ timegrify('2 years').toMilis() // => 63072000000
 ## License
 
 [MIT](LICENSE) © Christofer Flores
-

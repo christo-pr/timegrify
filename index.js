@@ -17,7 +17,7 @@ class Timegrify {
     return toMilis(parsedTime)
   }
 
-  toSec() {
+  toSec () {
     const parsedTime = parseTime(this._time)
     return toSec(parsedTime)
   }
