@@ -1,5 +1,6 @@
 # timegrify
 
+[![npm](https://img.shields.io/npm/v/timegrify.svg)](https://www.npmjs.com/package/timegrify)
 [![build status](https://img.shields.io/travis/CrystalStream/timegrify.svg)](https://travis-ci.org/CrystalStream/timegrify.svg?branch=master)
 [![styled with standard](https://img.shields.io/badge/styled_with-standard-ff69b4.svg)](https://github.com/standard/standard)
 [![made with lass](https://img.shields.io/badge/made_with-lass-95CC28.svg)](https://lass.js.org)
